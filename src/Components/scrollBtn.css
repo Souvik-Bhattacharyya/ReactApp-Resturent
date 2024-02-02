@@ -1,0 +1,14 @@
+.btn-mouse {
+    color: #fff !important;
+    border-radius: 20px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    box-shadow: 2px 2px 2px #00000035;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.btn-mouse:active {
+    box-shadow: inset 2px 2px 2px #00000035, 1px 1px 2px #fff;
+}

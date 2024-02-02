@@ -1,0 +1,115 @@
+@import url(../fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    z-index: 10;
+}
+
+.NavbarCont {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+
+.logoImg {
+    height: 50px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+.onScrollNav {
+    height: 60px;
+    width: 100%;
+    box-shadow: 0 0px 10px 0 rgba(31, 38, 135, 0.37);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    transition: all 0.5s ease-in-out;
+
+    background: rgba(255, 255, 255, 0.553);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.onScrollNav .logoImg {
+    height: 30px;
+    width: 50px;
+    transition: all 0.5s ease-in-out;
+}
+
+.onScrollNav .cont .btns {
+    font-size: 14px;
+    transition: all 0.5s ease-in-out;
+    color: #000;
+}
+
+.onScrollNav .cont .btn-info {
+    padding: 8px 12px;
+    transition: all 0.5s ease-in-out;
+}
+
+.onScrollNav .badge {
+    right: -50%;
+    transform: translate(-60%, -40%);
+    border: .5px solid;
+    transition: all 0.5s ease-in-out;
+    font-size: 10px;
+}
+.onScrollNav .active {
+    filter: drop-shadow(0px 0px 0px #333);
+    color: #35b8be !important;
+    font-weight: 500 !important;
+}
+
+/* ul ===================================*/
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont .btns {
+    background-color: transparent;
+    border: 0;
+    font-size: 16px;
+    color: #444;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.active {
+    color: #35b8be !important;
+    font-weight: 500 !important;
+}
+
+.cont .btn-info {
+    padding: 13px 16px;
+    color: #fff;
+    background-image: url(../../public/assets/buttonWave.svg);
+    position: relative;
+}
+
+.badge {
+    color: #35b8be !important;
+    border-radius: 49% !important;
+    position: absolute !important;
+    right: -50%;
+    transform: translate(-60%, -40%);
+    border: .5px solid;
+}

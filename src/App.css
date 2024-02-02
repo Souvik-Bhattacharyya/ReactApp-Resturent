@@ -1,0 +1,174 @@
+@import url("./fonts.css");
+
+
+.App {
+    position: relative;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+.info {
+    color: #35b8be !important;
+}
+
+::-webkit-scrollbar {
+    background-color: #aaa;
+    box-shadow: inset 2px 2px 10px #000;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 5px;
+    background: #0abcd0;
+    border-radius: 20px;
+}
+
+.btn.btn-info {
+    background-color: #35b8be;
+}
+
+.btn.btn-info:hover {
+    background-color: #28a2a7;
+    color: #fff;
+}
+
+/* Function */
+
+.worksComp h1 {
+    margin-bottom: 20px;
+    color: #35b8be;
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    font-weight: 600;
+    text-align: center;
+    font-family: "poppins";
+}
+
+.cardCont img {
+    width: 350px;
+}
+
+.cardCont .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardBody h3 {
+    text-align: center;
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+}
+
+.cardBody p {
+    text-align: center;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    color: #546285;
+    line-height: 1.5;
+}
+
+.cardBody {
+    margin-top: 40px;
+}
+
+.dash {
+    position: relative;
+    /* background-color: #999; */
+    height: 100%;
+}
+
+.dash::before {
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: #fff;
+    border-top: 1px dashed #d1cdcd;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 140px;
+}
+
+.cardCont .row {
+    display: flex;
+    justify-content: center;
+}
+
+.options {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row !important;
+    margin-bottom: 50px !important;
+}
+
+.options .link {
+    width: 150px;
+    margin: 0 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px !important;
+    border: 1px solid #aaa !important;
+}
+
+.link.active {
+    background-color: #35b8be !important;
+    color: #fff !important;
+    background-image: url(../public/assets/buttonWave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../public/assets/BgShape2.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+/* Support */
+
+.sup-img {
+    height: 100%;
+    width: 100%;
+}
+
+.sup-body {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+    width: 100%;
+    background-image: url(../public/assets/Pattern01.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-color: #35b8be;
+    padding: 60px;
+    flex-direction: column;
+}
+
+.sup-body h3 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+
+.sup-body h3 span {
+    font-size: 55px;
+    color: #1b9097;
+}
+
+.sup-body button{
+    font-size: 20px !important;
+    color: #35b8be !important;
+    padding: 15px;
+    margin-top: 30px;
+}
